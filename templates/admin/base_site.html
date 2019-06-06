@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% load admin_static %}
+{% block blockbots %}
+    {{ block.super }}
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/responsive.css' %}" />
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <img src="/static/images/logo.jpg" width="48px" height="48px" />&nbsp;Pomodoro
+    </h1>
+{% endblock %}
+
+{% block extrahead %}
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+{% endblock %}
