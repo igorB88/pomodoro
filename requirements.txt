@@ -8,7 +8,7 @@ pytz==2018.4
 jsonfield==2.0.2
 requests==2.18.4
 
-celery==4.2.1
+celery==5.2.2
 redis==2.10.6
 django-redis-cache==1.7.1
 
